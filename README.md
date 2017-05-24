@@ -47,6 +47,13 @@ config/test.json
 
 ### Installing System Dependencies
 
+### list of .gitignore files
+(please do this before running yarn)
+node_modules
+config/development.json
+config/production.json
+config/test.json
+
 ```
 brew install yarn
 brew install redis

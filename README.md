@@ -38,8 +38,8 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
 
 ## Development
 
-*** list of .gitignore files (please do this before running yarn or npm) ***
 ```
+*** list of .gitignore files (please do this before running yarn or npm) ***
 node_modules
 config/development.json
 config/production.json
@@ -93,7 +93,9 @@ In terminal, from the root directory:
 
 `knex seed:run --env NODE_ENV`
 
+```
 *** if you need to rollback, run `knex migrate:rollback --env NODE_ENV` ***
+```
 
 Note: `--env NODE_ENV` may be omitted for development. For example, `knex migrate:latest` will run all migrations in the development environment, while `knex migrate:latest --env test` will migrate in the test environment.
 

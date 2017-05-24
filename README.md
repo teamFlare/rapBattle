@@ -38,14 +38,15 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
 
 ## Development
 
-### Installing System Dependencies
-
-### list of .gitignore files
-(please do this before running yarn)
+*** list of .gitignore files (please do this before running yarn or npm) ***
+```
 node_modules
 config/development.json
 config/production.json
 config/test.json
+```
+
+### Installing System Dependencies
 
 ```
 brew install yarn
@@ -72,15 +73,15 @@ Development envronment: `grunt pgcreatedb:default`
 
 Other environments, specify like so: `NODE_ENV=test grunt pgcreatedb:default`
 
-*** If you encounter Error: 'grunt not found' type in the terminal:
-*** `export PATH="$PATH:$(yarn global bin)"` in the terminal 
-*** answer found in: (https://github.com/yarnpkg/yarn/issues/1321)
+*** If you encounter Error: 'grunt not found' type in the terminal: ***
+*** `export PATH="$PATH:$(yarn global bin)"` in the terminal ***
+*** answer found in: (https://github.com/yarnpkg/yarn/issues/1321) ***
 
-*** If you encounter Error: role "postgres" does not exist:
-*** AND you are using postgres from Homebrew, type in the terminal:
-*** `/usr/local/Cellar/postgresql/9.*.*/bin/createuser -s postgres`
-*** put your version of postgres in *.*, for example 9.6.1
-*** answer found in: (https://stackoverflow.com/questions/15301826/psql-fatal-role-postgres-does-not-exist)
+*** If you encounter Error: role "postgres" does not exist: ***
+*** AND you are using postgres from Homebrew, type in the terminal: ***
+*** `/usr/local/Cellar/postgresql/9.*.*/bin/createuser -s postgres` ***
+*** put your version of postgres in *.*, for example 9.6.1 ***
+*** answer found in: (https://stackoverflow.com/questions/15301826/psql-fatal-role-postgres-does-not-exist) ***
 
 ### Run Migrations & Data Seeds
 
